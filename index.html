@@ -5,10 +5,22 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio Site GJP</title> <!--This site use Vite + React-->
-    <script type="module" crossorigin src="/assets/index-D6wNBc16.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-JTf3tDnY.css">
+    <script type="module" crossorigin src="/assets/index-CpO2akbJ.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-DKU2yqJY.css">
   </head>
   <body>
+    <script>
+      (function() {
+        if (sessionStorage.redirect) {
+          var redirect = sessionStorage.redirect;
+          delete sessionStorage.redirect;
+          if (redirect !== "/") {
+            window.history.replaceState(null, null, redirect);
+          }
+        }
+      })();
+    </script>
+
     <div id="root"></div>
   </body>
 </html>
